@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+
+{% block title %} Landing Page {% endblock title %}
+<!-- link css files -->
+{% block link%}
+<link rel="stylesheet" type="text/css" href="{% static 'landingPage/style.css' %}">
+{% endblock link%}
+
+<!-- add body content. -->
+{% block page_content %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'landingPage/style.css' %}"> -->
+<hr>
+<div class="jumbotron">
+
+    <h1 id="gothic"> LANDING PAGE </h1>
+    <p> This site is still under construction.<br>
+        so please kindly don't panic and give us your <b>feedback</b>.
+    </p>
+    <hr>
+    <h3>Navigate to following pages.</h3>
+    <ul>
+        <li>Projects</li>
+        <li>Blog</li>
+    </ul>
+
+</div>
+
+{% endblock page_content %}
